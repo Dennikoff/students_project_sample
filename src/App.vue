@@ -1,11 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import Counter1 from './components/counter1.vue'
-import Counter2 from './components/counter2.vue'
-
-const counter = ref(0);
-
-const name = ref('denis');
+import Navigation from '@/components/Navigation.vue'
 
 
 
@@ -13,13 +8,8 @@ const name = ref('denis');
 
 <template>
   <main class="main-container">
-    <Counter1 v-model="counter"/>
-    <div class="name-container">
-
-    
-    {{ name }}
-    <input type="text" v-model="name">
-  </div>
+    <Navigation/>
+    <RouterView/>
   </main>
 </template>
 
