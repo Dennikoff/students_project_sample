@@ -11,6 +11,11 @@
                     Info
                 </RouterLink>
             </li>
+            <li>
+                <RouterLink :to="{name: 'posts'}">
+                    Posts
+                </RouterLink>
+            </li>
         </ul>
     </nav>
 </template>
